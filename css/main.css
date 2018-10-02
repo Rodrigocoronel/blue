@@ -1,0 +1,10 @@
+.imgresponsive{
+    max-width: 60%;
+    height: auto;
+    padding: .25rem;
+} 
+
+.bloque0{
+	background-image: url('../images/texture-min.jpg');
+	height: 50vh;	
+}
