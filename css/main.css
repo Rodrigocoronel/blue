@@ -1,10 +1,16 @@
 .imgresponsive{
-    max-width: 60%;
-    height: auto;
-    padding: .25rem;
-} 
-
+	    max-width: 80%;
+	    height: auto;
+	   /* padding: .25rem;*/
+	} 
+	.imgresponsive2{
+	    max-width: 70%;
+	    height: auto;
+	   /* padding: .25rem;*/
+	} 
 .bloque0{
-	background-image: url('../images/texture-min.jpg');
-	height: 50vh;	
-}
+		background-image: url('../images/texture-min.jpg');
+		height: 100vh;
+
+	}
+
