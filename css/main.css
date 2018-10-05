@@ -13,4 +13,33 @@
 		height: 100vh;
 
 	}
+.bloque1{
+		background-color: white;
+		height: 100vh;
 
+	}
+.bloque2{
+		background-color: #2086adfa;
+		height: 100vh;
+
+	}
+.bloque4{
+		background-color: #e0dede;
+		height: 100vh;
+
+	}
+.bloque5{
+		background-color: #e0dede;
+		height: 100vh;
+	}
+.imgContacto{
+	background-image: url('../images/imgContacto.svg');
+    width: 400px;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+
+.nav-link{
+	color: blue !important;
+}
