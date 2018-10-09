@@ -1,37 +1,86 @@
+
+ @media (max-width: 575.98px) {
+
+}
+
+@media (min-width: 576px) { 
+
+
+ }
+
+@media (min-width: 768px) { 
+	.gomezMorin{
+		max-width: 112%;
+	    height: auto;
+	}
+	.gomezMorinText{
+		max-width: 162%;
+	    height: auto;
+	    margin-left: 30px;
+	}
+	.rosasMagallanText{
+		max-width: 150%;
+	    height: auto;
+	    margin-left: 30px;
+	}
+	.hectorTeran{
+		max-width: 110%;
+		height: auto;
+	}
+
+	.rosasMagallan{
+		max-width: 110%;
+		height: auto;
+	}
+
+ }
+
+@media (min-width: 1200px){
+	.gomezMorin{
+		max-width: 70%;
+	    height: auto;
+	}
+	.gomezMorinText{
+		max-width: 90%;
+	    height: auto;
+	    margin-left: 30px;
+	}
+	.rosasMagallanText{
+		max-width: 90%;
+	    height: auto;
+	    margin-left: 30px;
+	}
+	.hectorTeran{
+		max-width: 80%;
+		height: auto;
+	}
+
+	.rosasMagallan{
+		max-width: 70%;
+		height: auto;
+	}
+}
+
+
 .imgresponsive{
 	    max-width: 80%;
 	    height: auto;
 	   /* padding: .25rem;*/
 	} 
-	.imgresponsive2{
-	    max-width: 70%;
-	    height: auto;
-	   /* padding: .25rem;*/
-	} 
-.bloque0{
-		background-image: url('../images/texture-min.jpg');
-		height: 100%;
+.imgresponsive2{
+    max-width: 70%;
+    height: auto;
+   /* padding: .25rem;*/
+} 
+.bloque{
+	height: 100%;
+}
+.bloque.carousel{background-image: url('../images/texture-min.jpg');}
+.bloque.orgulloAzul{background-color: white; padding-top: 84px;}
+.bloque.historia{background-color: #2086adfa; padding-top: 84px;}
+.bloque.noticias{background-color: #e0dede;	padding-top: 84px; }
+.bloque.contacto{background-color: #e0dede;padding-top: 84px; }
 
-	}
-.bloque1{
-		background-color: white;
-		height: 100%;
-
-	}
-.bloque2{
-		background-color: #2086adfa;
-		height: 100%;
-
-	}
-.bloque4{
-		background-color: #e0dede;
-		height: 100%;
-
-	}
-.bloque5{
-		background-color: #e0dede;
-		height: 100%;
-	}
 .imgContacto{
 	background-image: url('../images/imgContacto.svg');
     width: 400px;

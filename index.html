@@ -14,7 +14,7 @@
 
 	<script src="./js/jquery.js"></script>
 	<script src="./js/jquery.scrollify.js"></script>
-	<script src=".js/main.js"></script>
+	<script src="./js/main.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -29,7 +29,7 @@
       </script>
 </head>
 <body>
-	<div class="bloque0 bloque " data-section-name="home">
+	<div class="bloque carousel" data-section-name="home">
 		<div class="container-fluid h-100 pl-0" style="position: absolute;">
 			<div class="position-absolute" style="width: 350px;">
 				<img class="imgresponsive position-absolute" src="./images/ITEMS-01.svg" style="left: 33px; top : 30px;">
@@ -45,10 +45,10 @@
 					<div class="carousel-item active h-100">
 				    	<div class="row h-100">
 				    		<div class="col-sm-4 col-lg-6 align-self-center text-center">
-				      			<img class="imgresponsive animated fadeInLeft pl-3 mt-3" src="./images/gomez-text.svg">
+				      			<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/gomez-text.svg">
 				      		</div>
 				      		<div class="col-sm-8 col-lg-6 align-self-end text-right ">
-				      			<img class="imgresponsive2 animated fadeInRight" src="./images/gomez-morin.png">
+				      			<img class="gomezMorin animated fadeInRight" src="./images/gomez-morin.png">
 				      		</div>
 				      	</div>
 				      	<div class="position-absolute" style="bottom: 0px; right: 0px;">
@@ -60,11 +60,11 @@
 				    </div>
 				    <div class="carousel-item h-100">
 				      <div class="row h-100 align-items-end">
-				      	<div class="col align-self-center text-center">
-				      		<img class="imgresponsive animated fadeInLeft pl-3 mt-3" src="./images/hector-text1.svg">
+				      	<div class="col-sm-3 col-lg-6 align-self-center text-center">
+				      		<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/hector-text1.svg">
 				      	</div>
-				      	<div class="col align-self-end text-right ">
-				      		<img class="imgresponsive animated fadeInRight" src="./images/hector-teran-min.png">
+				      	<div class="col-sm-9 col-lg-6 align-self-end text-right ">
+				      		<img class="hectorTeran animated fadeInRight" src="./images/hector-teran-min.png">
 				      	</div>
 				      </div>
 				      <div class="position-absolute" style="bottom: 0px; right: 0px;">
@@ -76,11 +76,11 @@
 				    </div>
 				    <div class="carousel-item h-100">
 				      <div class="row h-100">
-				      	<div class="col align-self-center text-center">
-				      		<img class="imgresponsive animated fadeInLeft pl-3 mt-3" src="./images/rosas-text.svg">
+				      	<div class="col-sm-4 col-lg-6 align-self-center text-center">
+				      		<img class="rosasMagallanText animated fadeInLeft pl-3 mt-3" src="./images/rosas-text.svg">
 				      	</div>
-				      	<div class="col align-self-end text-right ">
-				      		<img class="imgresponsive2 animated fadeInRight" src="./images/rosas-magallan.png">
+				      	<div class="col-sm-8 col-lg-6 align-self-end text-right ">
+				      		<img class="rosasMagallan animated fadeInRight" src="./images/rosas-magallan.png">
 				      	</div>
 				      </div>
 				      <div class="position-absolute" style="bottom: 0px; right: 0px;">
@@ -95,8 +95,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="bloque1 bloque id="orgulloAzul" style="position: relative;" data-section-name="orgulloAzul">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-bottom: solid 1px #7f7676">
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-none" style="border-bottom: solid 1px #7f7676">
 		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -104,171 +104,117 @@
 		  <div class="collapse navbar-collapse" id="navbarText">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+		        <button class="btn btn-link" name="#home">Inicio <span class="sr-only">(current)</span></button>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#"><b>Orgullo Azul</b></a>
+		        <button class="btn btn-link" name="#orgulloAzul">Orgullo Azul</button>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Historia de BC</a>
+		        <button class="btn btn-link" name="#historia">Historia de BC</button>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Galeria</a>
+		        <button class="btn btn-link" name="#">Galeria</button>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Noticias</a>
+		        <button class="btn btn-link" name="#noticias">Noticias</button>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contacto</a>
+		        <button class="btn btn-link" name="#contacto">Contacto</button>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
-		<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
-			<img src="./images/yt.svg" style="width: 40px;">
-			<img src="./images/fb.svg" style="width: 40px;">
-			<img src="./images/tw.svg" style="width: 40px;">
-		</div>
-		<div class="container-fluid" style="height: calc(100% - 80px);">
-			<div class="row h-100">
-				<div class="col align-self-center text-center">
-					<img class="imgresponsive" src="./images/orgulloBlue.png">
+		<div class="bloque orgulloAzul" id="orgulloAzul" style="position: relative;" data-section-name="orgulloAzul">
+			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
+				<img src="./images/yt.svg" style="width: 40px;">
+				<img src="./images/fb.svg" style="width: 40px;">
+				<img src="./images/tw.svg" style="width: 40px;">
+			</div>
+			<div class="container-fluid" style="height: calc(100% - 80px);">
+				<div class="row h-100">
+					<div class="col-12 col-sm-6 align-self-center text-center">
+						<img class="imgresponsive" src="./images/orgulloBlue.png">
+					</div>
+					<div class="col-5 align-self-center" style="text-align: justify;">
+						<h3>¿Qué es Orgullo Azul?</h3>
+						<br/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>				
 				</div>
-				<div class="col align-self-center" style="text-align: justify;">
-					<h3>¿Qué es Orgullo Azul?</h3>
-					<br/>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>				
 			</div>
 		</div>
-	</div>
-	<div class="bloque2 bloque" style="position: relative;">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
-		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarText">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Orgullo Azul</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"><b>Historia de BC</b></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Galeria</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Noticias</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contacto</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-		<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
-			<img src="./images/yt-white.svg" style="width: 40px;">
-			<img src="./images/fb-white.svg" style="width: 40px;">
-			<img src="./images/tw-white.svg" style="width: 40px;">
-		</div>
-		<div class="container-fluid" style="height: calc(100% - 80px);">
-			<div class="row h-100">
-				<div class="col align-self-center text-center">
-					<img class="imgresponsive" src="./images/orgulloWhite.png">
+		<div class="bloque historia" id="historia" style="position: relative;" data-section-name="historia">
+			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
+				<img src="./images/yt-white.svg" style="width: 40px;">
+				<img src="./images/fb-white.svg" style="width: 40px;">
+				<img src="./images/tw-white.svg" style="width: 40px;">
+			</div>
+			<div class="container-fluid" style="height: calc(100% - 80px);">
+				<div class="row h-100">
+					<div class="col-12 col-sm-6 align-self-center text-center">
+						<img class="imgresponsive" src="./images/orgulloWhite.png">
+					</div>
+					<div class="col-5 align-self-center" style="text-align: justify; color: white;">
+						<h3>Historia de BAJA CALIFORNIA</h3>
+						<br/>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>				
 				</div>
-				<div class="col align-self-center" style="text-align: justify; color: white;">
-					<h3>Historia de BAJA CALIFORNIA</h3>
-					<br/>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>				
 			</div>
 		</div>
-	</div>
-	<div class="bloque4 bloque" style="position: relative;">
-		<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
-			<img src="./images/yt.svg" style="width: 40px;">
-			<img src="./images/fb.svg" style="width: 40px;">
-			<img src="./images/tw.svg" style="width: 40px;">
-		</div>
-		<div class="container" style="height: calc(100% - 80px);">
-			<div class="row h-100">
-				<div class="col-4 align-self-center">
-					<div class="card" style="width:auto;">
-						<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
-					  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
-					  	<div class="card-body">
-					    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					    	<a href="#" class="btn btn-link float-right">ver Más</a>
-					  	</div>
+		<div class="bloque noticias" id="noticias" style="position: relative;" data-section-name="noticias">
+			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
+				<img src="./images/yt.svg" style="width: 40px;">
+				<img src="./images/fb.svg" style="width: 40px;">
+				<img src="./images/tw.svg" style="width: 40px;">
+			</div>
+			<div class="container" style="height: calc(100% - 80px);">
+				<div class="row h-100">
+					<div class="col-12 col-lg-4 align-self-center">
+						<div class="card" style="width:auto;">
+							<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
+						  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
+						  	<div class="card-body">
+						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						    	<a href="#" class="btn btn-link float-right">ver Más</a>
+						  	</div>
+						</div>
 					</div>
+					<div class="col-12 col-lg-4 align-self-center">
+						<div class="card" style="width:auto;">
+							<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
+						  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
+						  	<div class="card-body">
+						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						    	<a href="#" class="btn btn-link float-right">ver Más</a>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-12 col-lg-4 align-self-center">
+						<div class="card" style="width:auto;">
+							<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
+						  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
+						  	<div class="card-body">
+						    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						    	<a href="#" class="btn btn-link float-right">ver Más</a>
+						  	</div>
+						</div>
+					</div>				
 				</div>
-				<div class="col-4 align-self-center">
-					<div class="card" style="width:auto;">
-						<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
-					  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
-					  	<div class="card-body">
-					    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					    	<a href="#" class="btn btn-link float-right">ver Más</a>
-					  	</div>
-					</div>
-				</div>
-				<div class="col-4 align-self-center">
-					<div class="card" style="width:auto;">
-						<div class="card-header">LOREM IMPSUN <br/> 05-10-2018</div>
-					  	<img class="card-img-top" src="./images/littleBird.png" alt="Card image">
-					  	<div class="card-body">
-					    	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					    	<a href="#" class="btn btn-link float-right">ver Más</a>
-					  	</div>
-					</div>
-				</div>				
 			</div>
 		</div>
-	</div>
-	<div class="bloque5 bloque" style="position: relative;">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
-		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarText">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Orgullo Azul</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Historia de BC</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Galeria</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Noticias</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"><b>Contacto</b></a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
-		<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
-			<img src="./images/yt.svg" style="width: 40px;">
-			<img src="./images/fb.svg" style="width: 40px;">
-			<img src="./images/tw.svg" style="width: 40px;">
-		</div>
-		<div class="container-fluid" style="height: calc(100% - 80px);">
-			<div class="row justify-content-around mb-0" style="height: 50%;">
-				<div class="col-4 align-self-end text-center" style="">
-					<p class="" style="color: white; background-color: black; height: 30px; vertical-align: middle;">contacto@orgulloazulbc.com</p>
-				</div>				
+		<div class="bloque contacto" id="contacto" style="position: relative;" data-section-name="contacto">
+			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
+				<img src="./images/yt.svg" style="width: 40px;">
+				<img src="./images/fb.svg" style="width: 40px;">
+				<img src="./images/tw.svg" style="width: 40px;">
+			</div>
+			<div class="container-fluid" style="height: calc(100% - 80px);">
+				<div class="row justify-content-around mb-0" style="height: 50%;">
+					<div class="col-4 align-self-end text-center" style="">
+						<p class="" style="color: white; background-color: black; height: 30px; vertical-align: middle;">contacto@orgulloazulbc.com</p>
+					</div>				
+				</div>
 			</div>
 		</div>
 	</div>
