@@ -10,27 +10,27 @@
 	} 
 .bloque0{
 		background-image: url('../images/texture-min.jpg');
-		height: 100vh;
+		height: 100%;
 
 	}
 .bloque1{
 		background-color: white;
-		height: 100vh;
+		height: 100%;
 
 	}
 .bloque2{
 		background-color: #2086adfa;
-		height: 100vh;
+		height: 100%;
 
 	}
 .bloque4{
 		background-color: #e0dede;
-		height: 100vh;
+		height: 100%;
 
 	}
 .bloque5{
 		background-color: #e0dede;
-		height: 100vh;
+		height: 100%;
 	}
 .imgContacto{
 	background-image: url('../images/imgContacto.svg');
@@ -42,4 +42,8 @@
 
 .nav-link{
 	color: blue !important;
+}
+
+section{
+	height: 100vh;
 }

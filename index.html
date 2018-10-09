@@ -13,14 +13,23 @@
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 
 	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.scrollify.js"></script>
+	<script src=".js/main.js"></script>
     <script src="./js/bootstrap.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
 	<!-- <link rel='shortcut icon' type='image/x-icon' href='../../favicom.ico' /> -->
+	<script>
+        $(function() {
+          $.scrollify({
+            section : ".bloque",
+          });
+        });
+      </script>
 </head>
 <body>
-	<div class="bloque0">
+	<div class="bloque0 bloque " data-section-name="home">
 		<div class="container-fluid h-100 pl-0" style="position: absolute;">
 			<div class="position-absolute" style="width: 350px;">
 				<img class="imgresponsive position-absolute" src="./images/ITEMS-01.svg" style="left: 33px; top : 30px;">
@@ -86,8 +95,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="bloque1" style="position: relative;">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
+	<div class="bloque1 bloque id="orgulloAzul" style="position: relative;" data-section-name="orgulloAzul">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="border-bottom: solid 1px #7f7676">
 		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -133,7 +142,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bloque2" style="position: relative;">
+	<div class="bloque2 bloque" style="position: relative;">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
 		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -180,35 +189,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bloque4" style="position: relative;">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
-		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarText">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Orgullo Azul</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Historia de BC</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Galeria</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#"><b>Noticias</b></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="#">Contacto</a>
-		      </li>
-		    </ul>
-		  </div>
-		</nav>
+	<div class="bloque4 bloque" style="position: relative;">
 		<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
 			<img src="./images/yt.svg" style="width: 40px;">
 			<img src="./images/fb.svg" style="width: 40px;">
@@ -249,7 +230,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bloque5" style="position: relative;">
+	<div class="bloque5 bloque" style="position: relative;">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: solid 1px #7f7676">
 		  <a class="navbar-brand" href="#"><img src="./images/logo.svg" style="width: 180px;"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -292,4 +273,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
