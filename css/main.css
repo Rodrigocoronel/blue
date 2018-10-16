@@ -1,10 +1,30 @@
 
  @media (max-width: 575.98px) {
-
+ 	.headerHome{
+ 		width: 100%;
+ 	}
+ 	.imgresponsive{
+	    max-width: 57%;
+	    height: auto;
+	   /* padding: .25rem;*/
+	} 
+	.gomezMorin{
+		max-width: 100%;
+	    height: auto;
+	}
+	.gomezMorinText{
+		max-width: 130%;
+	    height: auto;
+	    margin-left: 30px;
+	}
 }
 
 @media (min-width: 576px) { 
-
+.imgresponsive{
+	    max-width: 80%;
+	    height: auto;
+	   /* padding: .25rem;*/
+	} 
 
  }
 
@@ -62,11 +82,7 @@
 }
 
 
-.imgresponsive{
-	    max-width: 80%;
-	    height: auto;
-	   /* padding: .25rem;*/
-	} 
+
 .imgresponsive2{
     max-width: 70%;
     height: auto;
