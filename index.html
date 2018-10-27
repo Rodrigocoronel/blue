@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/animate.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"/>
 
 	<script src="./js/jquery.js"></script>
 	<script src="./js/jquery.scrollify.js"></script>
@@ -26,71 +27,84 @@
             section : ".bloque",
           });
         });
-      </script>
+     </script>
+    <style type="text/css">
+	    .menuActual:before{
+		   font-family: 'Font Awesome\ 5 Free';
+		   display: inline-block;
+		   padding-right: 6px;
+		   vertical-align: middle;
+		   font-weight: 900;
+		}
+
+    	.menuActual:before {
+		   content: "\f105";
+		}
+    </style>
 </head>
 <body>
 	<div class="bloque carousel" data-section-name="home">
 		<div class="container-fluid h-100 pl-0" style="position: absolute;">
 			<div class="position-absolute headerHome" style="">
-				<img class="imgresponsive position-absolute" src="./images/ITEMS-01.svg" style="left: 33px; top : 30px;">
-				<img src="./images/item1.svg" style="width: 100%;">
+				<img class="imgTopWhite position-absolute" src="./images/ITEMS-01.svg" style="left: 33px; top : 30px;">
+				<img class="imgTop" src="./images/item1.svg">
 			</div>
 			<div class="position-absolute" style="bottom: 50px; left: 10px;">
-				<img class="imgresponsive" src="./images/Pasted3.svg" style=" width: 250px;">
+				<img class="imgresponsive aaj" src="./images/Pasted3.svg" style="">
 			</div>
 			
 			<div class="row " style="height: 100%;">
 				<div id="carouselExampleSlidesOnly" class="carousel  h-100 w-100" data-ride="carousel" data-interval="5000">
-				  <div class="carousel-inner h-100">
-					<div class="carousel-item active h-100">
-				    	<div class="row h-100">
-				    		<div class="col-4 col-sm-4 col-lg-6 align-self-center text-center">
-				      			<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/gomez-text.svg">
+				  	<div class="carousel-inner h-100">
+						<div class="carousel-item active h-100">
+				    		<div class="row h-100">
+				    			<div class="col-4 col-sm-4 col-lg-6 align-self-center text-center">
+				      				<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/gomez-text.svg">
+				      			</div>
+				      			<div class="col-8 col-sm-8 col-lg-6 align-self-end text-right ">
+				      				<img class="gomezMorin animated fadeInRight" src="./images/gomez-morin.png">
+				      			</div>
 				      		</div>
-				      		<div class="col-8 col-sm-8 col-lg-6 align-self-end text-right ">
-				      			<img class="gomezMorin animated fadeInRight" src="./images/gomez-morin.png">
-				      		</div>
-				      	</div>
-				      	<div class="position-absolute" style="bottom: 0px; right: 0px;">
-							<img src="./images/esqDerecha.svg" style="bottom: 0px; width: 300px;">
-						</div>
-						<div class="position-absolute" style="bottom: 37px; right: 30px;">
-							<img class="animated2s fadeIn" src="./images/gomes-nombre.svg" style="width: 100px;">
-						</div>
-				    </div>
-				    <div class="carousel-item h-100">
-				      <div class="row h-100 align-items-end">
-				      	<div class="col-sm-3 col-lg-6 align-self-center text-center">
-				      		<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/hector-text1.svg">
-				      	</div>
-				      	<div class="col-sm-9 col-lg-6 align-self-end text-right ">
-				      		<img class="hectorTeran animated fadeInRight" src="./images/hector-teran-min.png">
-				      	</div>
-				      </div>
-				      <div class="position-absolute" style="bottom: 0px; right: 0px;">
-							<img src="./images/esqDerecha.svg" style="bottom: 0px; height: 380px;">
-						</div>
-						<div class="position-absolute" style="bottom: 37px; right: 30px;">
-							<img class="animated2s fadeIn" src="./images/hector-nombre.svg" style="width: 300px;">
-						</div>
-				    </div>
-				    <div class="carousel-item h-100">
-				      <div class="row h-100">
-				      	<div class="col-sm-4 col-lg-6 align-self-center text-center">
-				      		<img class="rosasMagallanText animated fadeInLeft pl-3 mt-3" src="./images/rosas-text.svg">
-				      	</div>
-				      	<div class="col-sm-8 col-lg-6 align-self-end text-right ">
-				      		<img class="rosasMagallan animated fadeInRight" src="./images/rosas-magallan.png">
-				      	</div>
-				      </div>
-				      <div class="position-absolute" style="bottom: 0px; right: 0px;">
-							<img src="./images/esqDerecha.svg" style="bottom: 0px; height: 380px;">
-						</div>
-						<div class="position-absolute" style="bottom: 37px; right: 30px;">
-							<img class="animated2s fadeIn" src="./images/rosas-nombre.svg" style="width: 300px;">
-						</div>
-				    </div>
-				  </div>
+					      	<div class="position-absolute" style="bottom: 0px; right: 0px;">
+								<img class="esqDerecha" src="./images/esqDerecha.svg" style="">
+							</div>
+							<div class="position-absolute" style="bottom: 37px; right: 30px;">
+								<img class="animated2s fadeIn textName" src="./images/gomes-nombre.svg" >
+							</div>
+				    	</div>
+					    <div class="carousel-item h-100">
+					      <div class="row h-100 align-items-end">
+					      		<div class="col-4 col-sm-4 col-lg-6 align-self-center text-center">
+					      			<img class="gomezMorinText animated fadeInLeft pl-3 mt-3" src="./images/hector-text1.svg">
+					      		</div>
+					      		<div class="col-8 col-sm-8 col-lg-6 align-self-end text-right ">
+					      			<img class="hectorTeran animated fadeInRight" src="./images/hector-teran-min.png">
+					      		</div>
+					      	</div>
+					      	<div class="position-absolute" style="bottom: 0px; right: 0px;">
+								<img class="esqDerechaHector" src="./images/esqDerecha.svg" style="">
+							</div>
+							<div class="position-absolute" style="bottom: 37px; right: 30px;">
+								<img class="animated2s fadeIn textName" src="./images/hector-nombre.svg" >
+							</div>
+					    </div>
+					    <div class="carousel-item h-100">
+					      	<div class="row h-100">
+					      		<div class="col-4 col-sm-4 col-lg-6 align-self-center text-center">
+					      			<img class="rosasMagallanText animated fadeInLeft pl-3 mt-3" src="./images/rosas-text.svg">
+					      		</div>
+					      		<div class="col-8 col-sm-8 col-lg-6 align-self-end text-right ">
+					      			<img class="rosasMagallan animated fadeInRight" src="./images/rosas-magallan.png">
+					      		</div>
+					      	</div>
+					      	<div class="position-absolute " style="bottom: 0px; right: 0px;">
+								<img class="esqDerecha" src="./images/esqDerecha.svg" style="bottom: 0px; width: 300px;">
+							</div>
+							<div class="position-absolute" style="bottom: 37px; right: 30px;">
+								<img class="animated2s fadeIn textName" src="./images/rosas-nombre.svg" >
+							</div>
+					    </div>
+				  	</div>
 				</div>
 			</div>
 		</div>
@@ -104,27 +118,27 @@
 		  <div class="collapse navbar-collapse" id="navbarText">
 		    <ul class="navbar-nav ml-auto">
 		      <li class="nav-item active">
-		        <button class="btn btn-link" name="#home">Inicio <span class="sr-only">(current)</span></button>
+		        <a class="btn btn-link" name="#home">Inicio <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <button class="btn btn-link" name="#orgulloAzul">Orgullo Azul</button>
+		        <a class="btn btn-link menuActual" name="#orgulloAzul">Orgullo Azul</a>
 		      </li>
 		      <li class="nav-item">
-		        <button class="btn btn-link" name="#historia">Historia de BC</button>
+		        <a class="btn btn-link" name="#historia">Historia de BC</a>
 		      </li>
 		      <li class="nav-item">
-		        <button class="btn btn-link" name="#">Galeria</button>
+		        <a class="btn btn-link" name="#">Galeria</a>
 		      </li>
 		      <li class="nav-item">
-		        <button class="btn btn-link" name="#noticias">Noticias</button>
+		        <a class="btn btn-link" name="#noticias">Noticias</a>
 		      </li>
 		      <li class="nav-item">
-		        <button class="btn btn-link" name="#contacto">Contacto</button>
+		        <a class="btn btn-link" name="#contacto">Contacto</a>
 		      </li>
 		    </ul>
 		  </div>
 		</nav>
-		<div class="bloque orgulloAzul" id="orgulloAzul" style="position: relative;" data-section-name="orgulloAzul">
+		<div class="bloque orgulloAzul" id="orgulloAzul2" style="position: relative;" data-section-name="orgulloAzul">
 			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
 				<img src="./images/yt.svg" style="width: 40px;">
 				<img src="./images/fb.svg" style="width: 40px;">
@@ -143,7 +157,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bloque historia" id="historia" style="position: relative;" data-section-name="historia">
+		<div class="bloque historia" id="historia2" style="position: relative;" data-section-name="historia">
 			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
 				<img src="./images/yt-white.svg" style="width: 40px;">
 				<img src="./images/fb-white.svg" style="width: 40px;">
@@ -162,7 +176,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bloque noticias" id="noticias" style="position: relative;" data-section-name="noticias">
+		<div class="bloque noticias" id="noticias2" style="position: relative;" data-section-name="noticias">
 			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
 				<img src="./images/yt.svg" style="width: 40px;">
 				<img src="./images/fb.svg" style="width: 40px;">
@@ -203,7 +217,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bloque contacto" id="contacto" style="position: relative;" data-section-name="contacto">
+		<div class="bloque contacto" id="contacto2" style="position: relative;" data-section-name="contacto">
 			<div class="position-absolute" style="display: grid; left: 10px; top: 150px;">
 				<img src="./images/yt.svg" style="width: 40px;">
 				<img src="./images/fb.svg" style="width: 40px;">

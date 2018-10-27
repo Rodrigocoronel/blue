@@ -17,15 +17,80 @@
 	    height: auto;
 	    margin-left: 30px;
 	}
+
+	.hectorTeran{
+		max-width: 100%;
+		height: auto;
+	}
+
+	.rosasMagallan{
+		max-width: 100%;
+		height: auto;
+	}
+
+	.rosasMagallanText{
+		max-width: 130%;
+		height: auto;
+		margin-left: 30px;
+	}
+
+	.imgresponsive.aaj{
+		width: 200px;
+	}
+
+	.esqDerecha{
+		bottom: 0px; width: 300px;
+	}
+
+	.textName{
+		width: 100px;
+	}
+
+	.imgTop{
+		width: 100%;
+	}
+
+	.imgTopWhite{
+		max-width: 50%;
+		height: auto;
+	}
+
+	.esqDerechaHector{
+		bottom: 0px; 
+		width: 220px;
+	}
 }
 
 @media (min-width: 576px) { 
-.imgresponsive{
+	.imgresponsive{
 	    max-width: 80%;
 	    height: auto;
 	   /* padding: .25rem;*/
 	} 
+	.imgresponsive.aaj{
+		width: 250px;
+	}
 
+	.esqDerecha{
+		bottom: 0px; width: 550px;
+	}
+	.textName{
+		width: 250px;
+	}
+
+	.imgTop{
+		width: 450px;
+	}
+
+	.imgTopWhite{
+		width: 300px;
+		height: auto;
+	}
+
+	.esqDerechaHector{
+		bottom: 0px; 
+		width: 550px;
+	}
  }
 
 @media (min-width: 768px) { 
